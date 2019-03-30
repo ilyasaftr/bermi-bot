@@ -40,11 +40,9 @@ if($register->result == 1){
 }else if($register->result == 0){
     echo "[$i] [".date('h:i:s')."] Gagal, ".$register->content."";
     echo "\r\n";
-    exit();
 }else{
     echo "[$i] [".date('h:i:s')."] Terjadi masalah dengan API FroidCode!";
     echo "\r\n";
-    exit();
 }
 
 $user_hash = $register->content;
@@ -72,11 +70,9 @@ if($finish->result == 1){
 }else if($finish->result == 0){
     echo "[$i] [".date('h:i:s')."] Gagal, ".$finish->content."";
     echo "\r\n";
-    exit();
 }else{
     echo "[$i] [".date('h:i:s')."] Terjadi masalah dengan API FroidCode!";
     echo "\r\n";
-    exit();
 }
 $i++;
 }
